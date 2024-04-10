@@ -6,6 +6,12 @@
 // twoSum([2,7,11,15], 9) --> [0,1]
 // twoSum([3,5,4], 9) --> [1,2]
 
-function twoSum(arr, target) {}
+function twoSum(arr, target) {
+    for(let i = 0; i < arr.length; i++) {
+        for(let u = 1; u < arr.length; u++) {
+            if(arr[i] + arr[u] === target) return [i,u]
+        }
+    }
+}
 
 module.exports = twoSum;
